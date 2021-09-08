@@ -1,0 +1,76 @@
+/* Gallery page */
+main, .container, body, html {
+    height: 100%;
+}
+ 
+.gallery-content-wrapper {
+    display: flex;
+    justify-content: center;
+    padding-top: 100px;
+    flex-wrap: wrap;
+    height: 100%;
+} 
+
+.gallery-item {
+    width: 300px;
+    height: 200px;
+    margin-right: 40px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    cursor: pointer;
+}
+
+.gallery-item.frogs {
+    background-image: url('../assets/frogs.jpg');
+}
+
+.gallery-item.flower {
+    background-image: url('../assets/flower.jpg');
+}
+
+.gallery-item.road {
+    background-image: url('../assets/road.jpg');
+}
+
+.overlay {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, .6);
+    /* alternative here: use a separate hidden class */
+    display: none;
+}
+
+.overlay-content-wrapper {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-sizing: border-box;
+    padding: 20px;
+}
+
+.overlay-content-wrapper.flags {
+    justify-content: space-between;
+}
+
+.overlay-content-wrapper i {
+    font-size: 70px;
+    color: #fff;
+    cursor: pointer;
+}
+
+.img-wrapper {
+    width: 600px;
+    height: 400px;
+    background-color: #fff;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}

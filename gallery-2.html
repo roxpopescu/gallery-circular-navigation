@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="description" content="Front end development course">
+        <meta name="keywords" content="HTML,CSS,JS,jQuery,Learning">
+        <meta name="author" content="Roxana Popescu">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <title>Coded Homes</title>
+        <link href="bundles/font-awesome/css/all.css" rel="stylesheet">
+        <link rel="stylesheet" type="text/css" href="resources/main.css">
+        <link rel="stylesheet" type="text/css" href="resources/gallery.css">
+        <script src="bundles/jquery/jquery-3.5.1.min.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <header>
+                <nav>
+                    <a data-open=1 href="index.html">Home</a>
+                    <a data-open=1 href="properties.html">Properties</a>
+                    <a href="about-us.html">About Us</a>
+                    <a href="contact.html">Contact</a>
+                    <a href="entries.html" data-open=1>Entries</a>
+                    <a href="gallery.html" data-open=1>Gallery - Simple</a>
+                    <a class="highlighted" href="gallery-2.html" data-open=1>Gallery - Navigation</a>
+                    <a target="_blank" href="https://www.google.com/">Google</a>
+                </nav>
+            </header>
+            <main>
+                <div class="gallery-content-wrapper"></div>
+
+                <div class="overlay">
+                    <div class="overlay-content-wrapper flags">
+                        <i data-direction="left" class="fas fa-chevron-left"></i>
+                        <!-- empty/placeholder element -->
+                        <div class="img-wrapper"></div>
+
+                        <i data-direction="right" class="fas fa-chevron-right"></i>
+                    </div>
+                </div>
+            </main>
+        </div>
+        <!-- we need flags-data.js to have flagsArr in our global scope -->
+        <script src="resources/flags-data.js"></script>
+        <script src="resources/gallery-2.js"></script>
+    </body>
+</html>
+
+
+
+
+
+
+
